@@ -1,0 +1,47 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.learn.automation</groupId>
+	<artifactId>api</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>automation api parent pom</name>
+	<description>This is Parent pom which shall include all the global entries for the child projects.</description>
+	<issueManagement>
+	</issueManagement>
+	<packaging>jar</packaging>
+	<developers>
+		<developer>
+			<name>Kapil Jain</name>
+			<email>kapil.jain at mindtree.com</email>
+			<organization>Mindtree</organization>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+		<developer>
+			<name>Gautam Sharma</name>
+			<email>Gautam.Sharma at mindtree.com</email>
+			<roles>
+				<role>Developer</role>
+			</roles>
+		</developer>
+	</developers>
+	
+	<modules>
+		<module>Service-Mock</module>
+		<module>RestAssure</module>
+		<module>Karate</module>
+	</modules>
+	
+	<dependencies>
+		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+		<dependency>
+			<groupId>io.rest-assured</groupId>
+			<artifactId>rest-assured</artifactId>
+			<version>3.1.0</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+</project>
