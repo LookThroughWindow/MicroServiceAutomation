@@ -27,21 +27,32 @@
 			</roles>
 		</developer>
 	</developers>
+	<properties>
+		<maven.compiler.version>2.3.2</maven.compiler.version>
+		<compiler.version>1.8</compiler.version>
+	</properties>
 	
 	<modules>
 		<module>Service-Mock</module>
-		<module>RestAssure</module>
-		<module>Karate</module>
+		<module>RestAssureFramework</module>
+		<module>KarateDSLFramework</module>
 	</modules>
 	
 	<dependencies>
 		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
-		<dependency>
-			<groupId>io.rest-assured</groupId>
-			<artifactId>rest-assured</artifactId>
-			<version>3.1.0</version>
-			<scope>test</scope>
-		</dependency>
+
 
 	</dependencies>
+	<build>
+		<plugins>
+			<plugin>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>${maven.compiler.version}</version>
+				<configuration>
+					<source>${compiler.version}</source>
+					<target>${compiler.version}</target>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 </project>
