@@ -5,11 +5,12 @@
 	<groupId>com.learn.automation</groupId>
 	<artifactId>api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>automation api parent pom</name>
 	<description>This is Parent pom which shall include all the global entries for the child projects.</description>
 	<issueManagement>
 	</issueManagement>
-	<packaging>pom</packaging>
+	
 	<developers>
 		<developer>
 			<name>Kapil Jain</name>
