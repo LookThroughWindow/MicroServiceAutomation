@@ -36,7 +36,7 @@
 	</properties>
 	
 	<modules>
-		<module>Service-Mock</module>
+		<module>Services</module>
 		<module>RestAssureFramework</module>
 		<module>KarateDSLFramework</module>
 	</modules>
