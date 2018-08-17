@@ -29,8 +29,10 @@
 		</developer>
 	</developers>
 	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.version>2.3.2</maven.compiler.version>
 		<compiler.version>1.8</compiler.version>
+		<logback.version>1.2.3</logback.version>
 	</properties>
 	
 	<modules>
@@ -40,7 +42,12 @@
 	</modules>
 	
 	<dependencies>
-		<!-- https://mvnrepository.com/artifact/com.jayway.restassured/rest-assured -->
+		<dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>${logback.version}</version>
+            <scope>runtime</scope>
+        </dependency>   
 
 
 	</dependencies>
