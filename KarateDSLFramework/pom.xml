@@ -7,9 +7,8 @@
     <artifactId>api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
-  <groupId>com.learn.automation</groupId>
+  <groupId>com.learn.automation.restassured</groupId>
   <artifactId>KarateDSLFramework</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
   <name>KarateDSLFramework</name>
   <url>http://maven.apache.org</url>
   <properties>
